@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+}
+
+div {
+    flex: 1;
+    display: flex;
+    width: 50%;
+    max-width: 1000px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 1;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+a {
+    text-align: center;
+}
+
+h1 {
+    color: #1877f2;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#mini-text {
+    font-size: 22px;
+    color: #1c1e21;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.signup {
+    background-color: #42b72a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.signup-color {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.signup:hover {
+    background-color: #338822;
+}
+
+.comein {
+    background-color: #1877f2;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.comein:hover {
+    background-color: #227ff8;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #1c1e21;
+    text-align: center;
+    max-width: 360px;
+}
+
+.create-p {
+    color: #1c1e21;
+}
+
+.forgot-pass {
+    font-size: 12px;
+}
+
+
+
+
+
