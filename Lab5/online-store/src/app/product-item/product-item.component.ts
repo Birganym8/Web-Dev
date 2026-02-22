@@ -1,4 +1,4 @@
-// product-item.component.ts
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../models/product.model';
 import { CommonModule } from '@angular/common';

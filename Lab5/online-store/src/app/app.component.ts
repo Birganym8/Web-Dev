@@ -1,4 +1,4 @@
-// app.component.ts
+
 import { Component } from '@angular/core';
 import { Category } from './models/category.model';
 import { Product } from './models/product.model';

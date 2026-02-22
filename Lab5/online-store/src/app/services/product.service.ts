@@ -72,7 +72,7 @@ private products: Product[] = [
     categoryId: 1
   },
 
-  // Laptops
+  
   {
     id: 6,
     name: 'Apple MacBook Air M2',
@@ -129,7 +129,7 @@ private products: Product[] = [
     categoryId: 2
   },
 
-  // Headphones
+  
   {
     id: 11,
     name: 'Sony WH-1000XM5',
@@ -186,7 +186,7 @@ private products: Product[] = [
     categoryId: 3
   },
 
-  // Tablets
+  
   {
     id: 16,
     name: 'Apple iPad 10.9 (2024)',

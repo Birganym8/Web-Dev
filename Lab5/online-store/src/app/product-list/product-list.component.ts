@@ -1,4 +1,4 @@
-// product-list.component.ts
+
 import { Component, Input } from '@angular/core';
 import { Product } from '../models/product.model';
 import { ProductItemComponent } from '../product-item/product-item.component';
