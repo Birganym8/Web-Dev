@@ -1,0 +1,18 @@
+<div class="categories">
+  <button 
+    class="category-button" 
+    *ngFor="let cat of categories" 
+    [class.active]="selectedCategory?.id === cat.id"
+    (click)="selectCategory(cat)">
+    {{ cat.name }}
+  </button>
+</div>
+
+<div *ngIf="!selectedCategory">
+  <p>Выберите категорию, чтобы увидеть продукты</p>
+</div>
+
+<app-product-list 
+  *ngIf="selectedCategory" 
+  [products]="getProducts(selectedCategory.id)">
+</app-product-list>
