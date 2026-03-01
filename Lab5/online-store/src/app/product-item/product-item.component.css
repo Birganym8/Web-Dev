@@ -1,6 +1,6 @@
 .product-card {
-  background-color: #fff0f0;
-  border: 1px solid #ffcccc;
+  background-color: #ffffff;
+  border: 1px solid #cccccc; 
   border-radius: 12px;
   padding: 15px;
   text-align: center;
@@ -11,7 +11,7 @@
 }
 
 .product-card:hover {
-  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   transform: translateY(-3px);
 }
 
@@ -26,12 +26,12 @@
 .product-card h3 {
   font-size: 16px;
   margin: 8px 0 4px;
-  color: #990000;
+  color: #333333; 
 }
 
 .product-card p {
   font-size: 14px;
-  color: #660000;
+  color: #555555; 
   margin: 4px 0;
 }
 
@@ -45,20 +45,21 @@
   transition: 0.2s all;
 }
 
+
 .like-btn {
-  background-color: #ffcccc;
-  color: #800000;
+  background-color: #f0f0f0;
+  color: #333333; 
 }
 
 .like-btn:hover {
-  background-color: #ffb3b3;
+  background-color: #e0e0e0; 
 }
 
 .delete-btn {
-  background-color: #ffe5e5;
-  color: #b30000;
+  background-color: #ff7d7d; 
+  color: #ffffff; 
 }
 
 .delete-btn:hover {
-  background-color: #ff9999;
+  background-color: #e5e5e5; 
 }

@@ -1,0 +1,11 @@
+<h1>Photos</h1>
+<div *ngIf="loading">Loading photos...</div>
+
+<div class="grid" *ngIf="!loading" style="display:grid; grid-template-columns: repeat(auto-fill, 150px); gap:10px;">
+  <div *ngFor="let photo of photos" style="text-align:center;">
+    <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+    <p>{{ photo.title }}</p>
+  </div>
+</div>
+
+<button (click)="goBack()">Back</button>

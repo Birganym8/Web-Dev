@@ -8,4 +8,5 @@ export interface Product {
   link: string;     
   imageUrl: string; 
   categoryId: number;   
+  isFavorite: boolean;
 }

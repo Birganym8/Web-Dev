@@ -1,11 +1,14 @@
 <div class="product-card">
-  <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
   <h3>{{ product.name }}</h3>
   <p>{{ product.description }}</p>
-  <p>Цена: {{ product.price | number }} ₸</p>
-  <p>Рейтинг: {{ product.rating }}</p>
-  <p>❤ {{ product.likes }}</p>
+  <p><strong>Price:</strong> {{ product.price }} ₸</p>
+  <p><strong>Likes:</strong> {{ product.likes }}</p>
 
-  <button class="like-btn" (click)="likeProduct()">❤ Like</button>
-  <button class="delete-btn" (click)="deleteProduct()">🗑 Delete</button>
+  <button (click)="like()">❤ Like</button>
+
+  <button *ngIf="!isFavoriteMode" (click)="onToggleFavourite()">
+    {{ product.isFavorite ? '⭐ In Favorites' : '⭐ Add to Favorites' }}
+  </button>
+
+  <button (click)="remove()">🗑 Remove</button>
 </div>

@@ -1,0 +1,20 @@
+
+<div *ngIf="loading" class="spinner">
+  <div class="loader"></div>
+  Loading albums...
+</div>
+
+
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+
+
+<ul *ngIf="!loading && !errorMessage">
+  <li *ngFor="let album of albums">
+    <span (click)="goToDetail(album.id)" style="cursor:pointer;">
+      {{ album.id }} - {{ album.title }}
+    </span>
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ul>

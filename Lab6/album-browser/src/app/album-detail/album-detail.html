@@ -1,0 +1,12 @@
+<div *ngIf="loading">Loading album...</div>
+
+<div *ngIf="!loading">
+  <h1>Album #{{ album.id }}</h1>
+  <p>User ID: {{ album.userId }}</p>
+  <p>
+    Title: <input [(ngModel)]="newTitle" />
+  </p>
+  <button (click)="save()">Save</button>
+  <button (click)="goToPhotos()">View Photos</button>
+  <button (click)="goBack()">Back</button>
+</div>
